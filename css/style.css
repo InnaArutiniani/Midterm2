@@ -1,9 +1,8 @@
 body{
 	background-color: #F7F7F7;
-	max-width: 1480px;
 }
 .common {
-	max-width: 1480px;
+	width: 1480px;
 }
 header  {
 	position: fixed;
@@ -15,14 +14,20 @@ header  {
 	z-index: 99;
 }
 .headernav {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
     margin: 20px auto;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
 }
 .header a{
 	color: #ffffff;
 }
 .navul{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 .navli {
@@ -33,9 +38,7 @@ header  {
 	position: relative;
 	width: 100%;
 }
-.bigimage img{
-	width: 
-}
+
 .bigimagetext {
 	position: absolute;
 	top: 770px;
@@ -54,12 +57,12 @@ header  {
 }
 .info h3 {
 	font-weight: bold;
-	font-family: brandon grotesque;
+	/**font-family: brandon grotesque;**/
 	font-size: 25px;
 	margin-bottom: 36px;
 }
 .info p{
-	font-family: tisa ot;
+	/**font-family: tisa ot;**/
 	font-size: 18px;
 	margin-bottom: 60px;
 }
@@ -70,8 +73,12 @@ header  {
 	background-color: #ffffff;
 }
 .extrap {
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
 	display: inline-flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 .conclution {
 	background-color: #0865de;
@@ -90,20 +97,26 @@ header  {
 	margin-bottom: 230px;
 }
 .project h3{
-	font-family: brandon grotesque;
+	/**font-family: brandon grotesque;**/
 	font-size: 14px;
 	margin-bottom: 60px;
 	font-weight: bold; 
 }
 .projectboxes {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	margin-bottom: 130px;
+	margin-right: 180px;
 }
 .box {
-	box-shadow: 3px 5px 10px rgba(0,0,0,0.1607843137254902 );
+	-webkit-box-shadow: 3px 5px 10px rgba(0,0,0,0.1607843137254902 );
+	        box-shadow: 3px 5px 10px rgba(0,0,0,0.1607843137254902 );
 	max-height: 461px;
-	font-family: brandon grotesque;
+	/**font-family: brandon grotesque;**/
 	margin-left: 30px;
 }
 .box h4{
@@ -127,8 +140,12 @@ header  {
 	padding-left: 30px;
 }
 .button {
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
 	display: inline-flex;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	padding-left: 30px;
 	padding-bottom: 40px;
 }
@@ -142,7 +159,7 @@ header  {
 	width: 176px;
 }
 .clickmore a{
-	font-family: brandon grotesque;
+	/**font-family: brandon grotesque;**/
 	font-size: 12px;
 	color: white;
 	margin: 0px auto;
@@ -152,7 +169,7 @@ header  {
     margin-bottom: 90px;
 }
 .b {
-    margin-left: 42.7%;
+    margin-left: 35.7%;
     width: 170px;
     height: 48px;
     border-radius: 4px;
@@ -168,18 +185,20 @@ header  {
 .button-svg {
     position: absolute;
     top: 15px;
-    left: 43.8%;
+    left: 36.8%;
 }
 footer{
+	display: -ms-grid;
 	display: grid;
 	width: 100%;
+    -ms-grid-columns: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas:
+        grid-template-areas:
         "a a b"
         "c c c";
 }
 footer h3{
-	font-family: brandon grotesque;
+	/**font-family: brandon grotesque;**/
 	font-size: 12px;
 	font-weight: bold;
 	color: #111111;
@@ -196,12 +215,20 @@ footer p{
 	font-size: 12px;
 }
 .footernav {
+	-ms-grid-row: 1;
+	-ms-grid-column: 1;
+	-ms-grid-column-span: 2;
 	width:927px;
 	grid-area: a;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-around;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
 }
 .input{
+	-ms-grid-row: 1;
+	-ms-grid-column: 3;
 	grid-area: b;
 	background-color: white;
 	padding-left: 90px;
@@ -216,20 +243,34 @@ footer p{
 	border: 1px solid #0865DE;
 }
 .input p{
-	font-family: tisa ot;
+	/**font-family: tisa ot;**/
 	font-size: 12px;
 	color: #111111;
 	margin-bottom: 30px;
+	max-width: 271px;
 }
 .footnote{
+	-ms-grid-row: 2;
+	-ms-grid-column: 1;
+	-ms-grid-column-span: 3;
 	grid-area: c;
 	width: 100%;
 	height: 120px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 .footnote1{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
